@@ -28,6 +28,7 @@
 body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  box-sizing: border-box;
 }
 
 .text-primary-p {
@@ -187,7 +188,7 @@ main {
 
 .charts {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 50px;
 }
@@ -282,7 +283,7 @@ main {
   background-color: #d1ecf1;
   color: #35a4ba;
   text-align: center;
-  padding: 25px;
+  padding: 15%;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -291,7 +292,7 @@ main {
   background-color: #d2f9ee;
   color: #38e1b0;
   text-align: center;
-  padding: 25px;
+  padding: 15%;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -300,7 +301,7 @@ main {
   background-color: #d6d8d9;
   color: #3a3e41;
   text-align: center;
-  padding: 25px;
+  padding: 15%;
   border-radius: 5px;
   font-size: 14px;
 }
@@ -309,7 +310,7 @@ main {
   background-color: #fddcdf;
   color: #f65a6f;
   text-align: center;
-  padding: 25px;
+  padding: 15%;
   border-radius: 5px;
   font-size: 14px;
 }
