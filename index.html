@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="html css js">
+    <meta name="description" content="user dashboard using html css js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav_icon" onclick="toggleSidebar()">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="nav_left">
+                <a href="#">Subcribers</a>
+                <a href="#">video management</a>
+                <a href="#" class="active_link">Admin</a>
+            </div>
+            <div class="nav_right">
+                <a href="#">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-regular fa-clock"></i>
+                </a>
+                <a href="#">
+                    <img src="images/photoimage2.jpg" alt="image_logo" width="30">
+                </a>
+            </div>
+        </nav>
+        <main>
+            <div class="main_container">
+
+                <div class="main_title">
+                    <img src="images/officeImg.png" alt="image_head">
+                    <div class="main_greetings">
+                        <h1>hello users</h1>
+                        <p>welcome to your admin dashboard</p>
+                    </div>
+                </div>
+
+                <div class="main_cards">
+
+                    <div class="card">
+                        <i class="fa-solid fa-user fa-2x text-lightblue"></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Number of Subcribers</p>
+                            <span class="font-bold text-title">578</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa-regular fa-calendar-days fa-2x text-red"></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Times of Watching</p>
+                            <span class="font-bold text-title">2478</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-video-camera fa-2x text-yellow"></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Number of Videos</p>
+                            <span class="font-bold text-title">248</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <i class="fa fa-thumbs-up fa-2x text-green"></i>
+                        <div class="card_inner">
+                            <p class="text-primary-p">Number of Likes</p>
+                            <span class="font-bold text-title">278</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="charts">
+                    <div class="charts_left">
+                        <div class="charts_left_title">
+                            <div>
+                                <h1>Daily reports</h1>
+                                <p>Warnagal, Telangana, India.</p>
+                            </div>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                        </div>
+                        <div id="apex1"></div>
+                    </div>
+
+                    <div class="charts_right">
+                        <div class="charts_right_title">
+                            <div>
+                                <h1>Stats report</h1>
+                                <p>Warnagal, Telangana, India.</p>
+                            </div>
+                            <i class="fa-solid fa-indian-rupee-sign"></i>
+                        </div>
+                        <div class="charts_right_cards">
+                            <div class="card1">
+                                <h1>Income</h1>
+                                <p>75000 Rs</p>
+                            </div>
+
+                            <div class="card2">
+                                <h1>Sales</h1>
+                                <p>25000 Rs</p>
+                            </div>
+
+                            <div class="card3">
+                                <h1>Users</h1>
+                                <p>8865</p>
+                            </div>
+
+                            <div class="card4">
+                                <h1>Orders</h1>
+                                <p>5458</p>
+                            </div>
+                        </div>
+                        <div class="stats_info">
+                            <h3>These are various stats avaliable.</h3>
+                            <p>Group of these include detailed information.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+        <div id="sidebar">
+            <div class="sidebar_title">
+                <div class="side_image">
+                    <img src="images/dashboardimage.jpg" alt="logo">
+                    <h1>Clear Ways</h1>
+                </div>
+                <i class="fa-solid fa-xmark" id="sidebarIcon" onclick="closeSidebar()"></i>
+            </div>
+            <div class="sidebar_menu">
+                <div class="sidebar_link active_menu_link">
+                    <i class="fa fa-home"></i>
+                    <a href="#">Dashboard</a>
+                </div>
+                <h2>MNG</h2>
+                <div class="sidebar_link">
+                    <i class="fa fa-user-secret"></i>
+                    <a href="#">Admin management</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa-solid fa-building-lock"></i>
+                    <a href="#">Company management</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa fa-wrench"></i>
+                    <a href="#">Employee management</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa fa-archive"></i>
+                    <a href="#">Warehouse</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa-regular fa-handshake"></i>
+                    <a href="#">Contracts</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa fa-question"></i>
+                    <a href="#">Requests</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa fa-sign-out"></i>
+                    <a href="#">Leave policy</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <a href="#">Special Days</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa-regular fa-file"></i>
+                    <a href="#">Apply for Leave</a>
+                </div>
+                <h2>PAYROLL</h2>
+                <div class="sidebar_link">
+                    <i class="fa-solid fa-money-bill-1"></i>
+                    <a href="#">Payroll</a>
+                </div>
+                <div class="sidebar_link">
+                    <i class="fa fa-briefcase"></i>
+                    <a href="#">paygrade</a>
+                </div>
+                <div class="sidebar_logout">
+                    <i class="fa fa-power-off"></i>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- using Apex charts cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.45.1/apexcharts.min.js"
+        integrity="sha512-mDe5mwqn4f61Fafj3rll7+89g6qu7/1fURxsWbbEkTmOuMebO9jf1C3Esw95oDfBLUycDza2uxAiPa4gdw/hfg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
